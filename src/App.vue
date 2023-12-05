@@ -5,8 +5,8 @@ import CommentCard from './components/CommentCard.vue'
 </script>
 
 <template>
-  <main class="bg-Backgroun w-[100vw] h-[100vh] px-32 pt-16 flex flex-col items-center">
-    <div v-for="(comment, index) in data.comments" key="index">
+  <main class="bg-Backgroun w-[100vw] px-32 pt-16 flex flex-col items-center">
+    <div v-for="(comment, index) in data.comments" >
       <CommentCard :data="comment"></CommentCard>
     </div>
   </main>
